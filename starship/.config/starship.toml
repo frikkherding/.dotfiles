@@ -1,10 +1,10 @@
 format = """
 $directory\
+$gcloud\
 $git_branch\
 $git_status\
 $git_state\
 $custom\
-$aws\
 $cmd_duration\
 $line_break\
 $character"""
@@ -19,12 +19,6 @@ style = "bold purple"
 truncation_length = 30
 format = '[$symbol$branch]($style) '
 
-[aws]
-format = '[$symbol($profile )(\[$duration\] )]($style)'
-symbol = '󰅟  '
-style = "bold yellow"
-force_display = false
-
 [time]
 disabled = false
 time_format = "%T"
@@ -36,3 +30,7 @@ format = '[  $symbol$time]($style) '
 format = '[  $duration]($style) '
 style = 'bold green'
 
+[gcloud]
+disabled = false
+format = "[$symbol$project]($style) "
+symbol = '󰅟  '
