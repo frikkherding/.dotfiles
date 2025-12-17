@@ -21,3 +21,11 @@ vim.keymap.set('t', '<C-t>', '<C-\\><C-n>:lua TermToggle(20)<CR>', { noremap = t
 
 -- Show shortcuts
 vim.keymap.set('n', '<leader>?', "<cmd>lua require('which-key').show()<CR>", { desc = 'Show Shortcuts' })
+
+-- Simplify saving and quitting
+vim.keymap.set('n', '<leader>w', '<cmd>w<CR>', { desc = 'Save file' })
+vim.keymap.set('n', '<leader>Q', '<cmd>q<CR>', { desc = 'Quit Neovim' })
+vim.keymap.set('n', '<leader>x', '<cmd>wq<CR>', { desc = 'Save and Quit Neovim' })
+
+-- Reload all buffers
+vim.keymap.set('n', '<leader>r', '<cmd>bufdo e!<CR>', { desc = 'Reload all buffers' })
