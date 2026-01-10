@@ -50,6 +50,7 @@ return { -- Useful plugin to show you pending keybinds.
         { '<leader>g', group = 'To[g]gle' },
         { '<leader>h', group = 'Git [H]unk', mode = { 'n', 'v' } },
         { '<leader>b', group = 'De[b]ug' },
+        { '<leader>n', group = 'Notes' },
         { 'g', group = '[G]o' },
         { 'gr', group = 'Go LSP actions' },
         { 'z', group = 'Folding' },

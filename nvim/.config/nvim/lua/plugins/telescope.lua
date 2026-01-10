@@ -106,12 +106,23 @@ return { -- Fuzzy Finder (files, lsp, etc)
     end, { desc = '[S]earch [N]eovim files' })
 
     -- Shortcut for searching notes
-    vim.keymap.set('n', '<leader>so', function()
+    vim.keymap.set('n', '<leader>ns', function()
       builtin.find_files { cwd = '~/Documents/Notes' }
-    end, { desc = '[S]earch N[o]tes' })
+    end, { desc = '[S]earch Notes' })
 
-    vim.keymap.set('n', '<leader>sp', function()
+    vim.keymap.set('n', '<leader>nf', function()
       builtin.live_grep { cwd = '~/Documents/Notes' }
-    end, { desc = 'Fuzzy [S]earch Notes' })
+    end, { desc = '[F]uzzy Search Notes' })
+
+    vim.keymap.set('n', '<leader>nn', function()
+      local base_path = vim.fn.expand '~/Documents/Notes/'
+      local filename = vim.fn.input('New file: ', base_path, 'file')
+
+      if filename == '' then
+        return
+      end
+
+      vim.cmd.edit(filename)
+    end, { desc = 'Create [N]ew File' })
   end,
 }
