@@ -12,7 +12,7 @@ return { -- Oil file manager
       ['<ESC>'] = { 'actions.close', mode = 'n' },
     },
   },
-  dependencies = { { 'echasnovski/mini.icons', opts = {} } },
+  dependencies = { 'nvim-tree/nvim-web-devicons' },
   lazy = false,
   keys = {
     vim.keymap.set('n', '-', '<CMD>Oil --float<CR>', { desc = 'File Explorer' }),

@@ -3,7 +3,7 @@ return { -- Nvim Spectre, Advanced Search and Replace
   event = 'VeryLazy',
   dependencies = {
     'nvim-lua/plenary.nvim',
-    'pechasnovski/mini.icons',
+    'nvim-tree/nvim-web-devicons',
   },
   config = function()
     require('spectre').setup {

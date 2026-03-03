@@ -1,5 +1,6 @@
 # Neovim 
 alias vim='nvim'
+alias v='nvim .'
 
 # git
 alias gs='git status'

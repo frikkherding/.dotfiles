@@ -14,3 +14,4 @@ plug "$HOME/.config/zsh/aliases.zsh"
 plug "$HOME/.config/zsh/hflex-aliases.zsh"
 plug "$HOME/.config/zsh/options.zsh"
 
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"

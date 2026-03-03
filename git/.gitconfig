@@ -3,6 +3,7 @@
 	email = frikksol@gmail.com
 [pull]
 	ff = only
+	rebase = true
 [core]
 	autocrlf = input
 	pager = delta
@@ -19,3 +20,5 @@
 
 [diff]
 	colorMoved = default
+[init]
+	defaultBranch = main
