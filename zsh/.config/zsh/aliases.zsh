@@ -54,4 +54,7 @@ alias rcsource='source $HOME/.zshrc'
 # applications
 alias python='python3'
 alias pip='pip3'
+alias cop='copilot'
 
+# nom rss reader
+alias nomm='nom refresh && nom'
