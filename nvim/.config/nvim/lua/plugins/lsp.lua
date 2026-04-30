@@ -249,7 +249,6 @@ return {
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'goimports', -- Used to format Go code
-        'rustfmt', -- Used to format Rust code
         'prettierd', -- Used to format JavaScript and TypeScript code
         'codespell', -- Used to spell check code
         'kotlin-lsp', -- Kotlin LSP
