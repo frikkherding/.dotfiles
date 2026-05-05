@@ -20,6 +20,8 @@ return { -- Collection of various small independent plugins/modules
       require('mini.pairs').setup()
       -- Use brackets as motions
       require('mini.bracketed').setup()
+      -- Icons
+      require('mini.icons').setup()
     end,
   },
   vim.keymap.set({ 'n', 'x' }, 's', '<Nop>'),

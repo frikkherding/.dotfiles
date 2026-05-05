@@ -7,6 +7,7 @@ return {
     'nvim-treesitter/nvim-treesitter',
     'nvim-neotest/neotest-go',
     'mrcjkb/rustaceanvim',
+    'marilari88/neotest-vitest',
   },
   opts = {},
   config = function()
@@ -15,6 +16,7 @@ return {
       adapters = {
         require 'neotest-go',
         require 'rustaceanvim.neotest',
+        require 'neotest-vitest',
       },
       output_panel = {
         enabled = true,

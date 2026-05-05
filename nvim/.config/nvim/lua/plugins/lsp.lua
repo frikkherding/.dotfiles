@@ -215,7 +215,10 @@ return {
         rust_analyzer = {},
         ts_ls = {},
         svelte = {},
-
+        prettierd = {},
+        ['svelte-language-server'] = {},
+        ['typescript-language-server'] = {},
+        ['js-debug-adapter'] = {},
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
@@ -226,7 +229,6 @@ return {
                 callSnippet = 'Replace',
               },
               -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-              diagnostics = { disable = { 'missing-fields' } },
             },
           },
         },
@@ -252,6 +254,9 @@ return {
         'prettierd', -- Used to format JavaScript and TypeScript code
         'codespell', -- Used to spell check code
         'kotlin-lsp', -- Kotlin LSP
+        'typescript-language-server', -- Used to provide ts_ls
+        'svelte-language-server', -- Used to provide svelte
+        'js-debug-adapter', -- Used to provide js_debug_adapter
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -310,6 +315,7 @@ return {
         javascript = { 'prettierd', 'prettier', stop_after_first = true },
         svelte = { 'prettierd', 'prettier', stop_after_first = true },
         kotlin = { 'ktlint' },
+        react = { 'prettierd', 'prettier', stop_after_first = true },
         ['*'] = { 'codespell' },
       },
     },
