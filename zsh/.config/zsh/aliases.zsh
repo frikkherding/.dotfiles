@@ -26,7 +26,6 @@ alias cd='z'
 alias cdd='z -'
 
 # files
-alias c='bat'
 alias cat='bat'
 alias catp='cat -p'
 alias rgg='rg -S -L -p -uuu'
@@ -55,6 +54,7 @@ alias rcsource='source $HOME/.zshrc'
 alias python='python3'
 alias pip='pip3'
 alias cop='copilot'
+alias c='claude'
 
 # nom rss reader
 alias nomm='nom refresh && nom'
