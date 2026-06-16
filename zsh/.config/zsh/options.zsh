@@ -36,9 +36,8 @@ eval "$(zoxide init zsh)"
 # Add idea to path
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 
-# Add go to path
+# Add go to path (go itself is installed via Homebrew, already on PATH)
 export GOPATH="$HOME/go"
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 export PATH="$PATH:$GOPATH/bin"
 
 # load and initialise completion system
