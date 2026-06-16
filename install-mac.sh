@@ -6,7 +6,7 @@ echo "Installing packages..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Terminal Tools
-brew install bat eza fzf git htop zoxide zsh the_silver_searcher tree wget ripgrep
+brew install bat eza fzf git htop zoxide zsh the_silver_searcher tree wget ripgrep stow z
 brew install lazygit lazydocker 
 brew install neovim mdcat starship stow zellij git-delta tmux
 brew install 1password-cli
@@ -32,7 +32,7 @@ bat cache --build
 # Info
 echo "Remember to run fzf install script. See their installation instructions"
 echo ""
-echo "Applications to install manually: Docker Desktop, IntelliJ, OpenVpn, Ableton, pCloud, VsCode"
+echo "Applications to install manually: Docker Desktop, IntelliJ, OpenVpn, Ableton, Jottacloud, VsCode"
 echo "Applications to install with npm -g: aws-cdk, aws-cdk-local, vercel"
 echo ""
 echo "Done!"
